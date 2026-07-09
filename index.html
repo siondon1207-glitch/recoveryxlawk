@@ -1,23 +1,681 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://legal.reliabledone.com/suwon-rehabilitation",
+                "url": "https://legal.reliabledone.com/suwon-rehabilitation",
+                "name": "수원개인회생 자격 조건 및 2026년 최저생계비 기준 상세 가이드",
+                "description": "수원지방법원 관할인 장안구, 권선구, 팔달구, 영통구 지역의 개인회생 자격과 2026년 최신 최저생계비 기준을 반영한 변제금 산정 방식을 상세히 설명합니다.",
+                "inLanguage": "ko-KR"
+            },
+            {
+                "@type": "Service",
+                "name": "수원개인회생 법률 상담 및 컨설팅 서비스",
+                "provider": {
+                    "@type": "LegalService",
+                    "name": "수원개인회생 법률 상담 지원 센터",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "수원시",
+                        "addressRegion": "경기도",
+                        "addressCountry": "KR"
+                    }
+                },
+                "description": "2026년 최신 기준의 1인 가구 최저생계비 1,538,543원을 적용하여 예상 변제금 계산 및 맞춤형 면책 전략 수립을 지원합니다."
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "수원지방법원의 개인회생 심사 기준은 다른 법원과 어떤 차이점이 있나요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "수원지방법원은 경기도 남부 지역인 장안구, 권선구, 팔달구, 영통구 등을 관할하며, 최근 발생한 채무와 주식 및 가상화폐 투자로 인한 손실에 대한 보정 권고가 비교적 상세하고 엄격하게 내려지는 편입니다. 따라서 소득의 투명한 증빙과 부양가족 수에 따른 생계비 소명이 개시 결정의 성패를 좌우합니다."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "2026년 가구원수별 개인회생 최저생계비는 얼마인가요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "2026년 보건복지부 기준 중위소득의 60%를 반영한 개인회생 최저생계비는 1인 가구 약 1,538,543원, 2인 가구 약 2,520,105원, 3인 가구 약 3,211,916원, 4인 가구 약 3,906,688원입니다."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "최근 1년 이내에 발생한 신규 채무가 많아도 개인회생 가입 및 신청이 가능한가요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "최근 대출이나 카드 사용액이 많은 신규 채무의 경우에도 신청 자체는 가능하지만, 법원에서 대출금의 구체적인 사용처에 대한 소명 자료를 강력하게 요구합니다. 사용처가 불분명하거나 유흥, 도박 등으로 확인될 경우 청산가치에 반영되어 변제금 부담이 증가할 수 있습니다."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        body { 
+            font-family: 'Noto Sans KR', sans-serif; 
+            line-height: 1.8; 
+            margin: 0; 
+            padding: 0; 
+            background: #f8fafc; 
+            color: #1e293b; 
+        }
+        header, section, footer { 
+            max-width: 1000px; 
+            margin: 25px auto; 
+            padding: 30px 25px; 
+            background: #ffffff; 
+            border-radius: 16px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); 
+        }
+        
+        h1 { 
+            color: #0f766e; 
+            font-size: 2.2em; 
+            text-align: center; 
+            margin-bottom: 15px; 
+            font-weight: 700;
+        }
+        h2 { 
+            color: #0369a1; 
+            font-size: 1.6em; 
+            border-bottom: 2px solid #e2e8f0; 
+            padding-bottom: 12px; 
+            margin-top: 35px; 
+            font-weight: 600;
+        }
+        h3 { 
+            color: #0f766e; 
+            font-size: 1.3em; 
+            margin-top: 25px; 
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        ul, ol { 
+            padding-left: 20px; 
+            margin-bottom: 25px; 
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: separate; 
+            border-spacing: 0; 
+            margin: 25px 0; 
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+        th, td { 
+            padding: 15px; 
+            text-align: left; 
+        }
+        th { 
+            background: #0f766e; 
+            color: #ffffff; 
+            font-weight: 600;
+        }
+        td { 
+            background: #ffffff; 
+            border-bottom: 1px solid #e2e8f0; 
+        }
+        tr:last-child td { 
+            border-bottom: none; 
+        }
+        
+        a { 
+            color: #0369a1; 
+            text-decoration: none; 
+            font-weight: 500;
+        }
+        a:hover { 
+            text-decoration: underline; 
+            color: #0f766e;
+        }
+        
+        .btn-cta {
+            display: block; 
+            width: 85%;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 16px 24px;
+            background: #0f766e; 
+            color: #ffffff;
+            font-size: 1.15em;
+            font-weight: 700;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(15, 118, 110, 0.2);
+            transition: all 0.3s ease;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-cta:hover {
+            background: #0369a1;
+            transform: translateY(-1px);
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        form label { 
+            font-weight: 600; 
+            display: block; 
+            margin-top: 20px; 
+            color: #1e293b; 
+        }
+        form input[type="text"], 
+        form input[type="tel"], 
+        form input[type="number"], 
+        form select, 
+        form textarea {
+            width: 100%;
+            padding: 14px;
+            margin-top: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            box-sizing: border-box;
+            background-color: #f8fafc;
+            transition: border-color 0.3s;
+            font-size: 1em;
+        }
+        form input:focus, 
+        form select:focus, 
+        form textarea:focus {
+            border-color: #0f766e;
+            outline: none;
+            background-color: #ffffff;
+        }
+
+        .info-box {
+            background: #f0fdfa; 
+            border-left: 5px solid #0f766e;
+            padding: 24px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .chart-container {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .chart-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .chart-label {
+            width: 100px;
+            font-weight: 600;
+            font-size: 0.9em;
+            color: #475569;
+        }
+        .chart-bar-wrapper {
+            flex-grow: 1;
+            background: #f1f5f9;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 24px;
+        }
+        .chart-bar {
+            height: 100%;
+            background: #0369a1;
+            color: #ffffff;
+            font-size: 0.85em;
+            line-height: 24px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+        .chart-bar.active {
+            background: #0f766e;
+        }
+
+        .required-label {
+            color: #dc2626;
+            font-size: 0.85em;
+            margin-left: 5px;
+            font-weight: normal;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .flex-item {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .poll-section {
+            background: #f0f9ff;
+            border-left: 5px solid #0369a1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        @media(max-width: 768px) {
+            header, section, footer { 
+                margin: 15px; 
+                padding: 20px 15px; 
+            }
+            h1 { 
+                font-size: 1.7em; 
+            }
+            .btn-cta { 
+                width: 100%; 
+                font-size: 1.05em; 
+            }
+            th, td { 
+                padding: 10px;
+                font-size: 0.9em;
+            }
+            .chart-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .chart-label {
+                margin-bottom: 5px;
+            }
+            .chart-bar-wrapper {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>수원개인회생 자격 기준 및 2026년 최저생계비 적용 변제금 산정 가이드</h1>
+        <p>감당하기 힘든 부채로 고통받고 계신 채무자분들을 위해 수원지방법원 관할 구역인 장안구, 권선구, 팔달구, 영통구 거주자의 지역 특성을 파악하고, 최신 법률 개정 사항을 적용한 구체적인 해결 방안을 제시해 드립니다.</p>
+        <a href="#calculator-section" class="btn-cta">자가 진단 프로그램을 통한 예상 변제금 알아보기</a>
+    </header>
+
+    <section>
+        <h2>수원개인회생 제도 개요와 2026년 주요 법률 변경점</h2>
+        <p>개인회생은 재정적 파탄에 직면한 급여소득자 또는 영업소득자가 매달 정기적이고 확실한 소득을 얻고 있다는 전제하에, 소득에서 법정 최저생계비를 제한 나머지 금액을 최장 3년에서 5년 동안 성실히 납부하면 남은 채무의 원금과 이자를 모두 면책받을 수 있는 공적 채무조정 제도입니다.</p>
+        <p>2026년은 개인회생을 고민하는 많은 채무자분들에게 매우 중대한 시기입니다. 매년 보건복지부에서 공표하는 기준 중위소득이 크게 인상됨에 따라, 채무자의 월 소득에서 공제되는 법정 최저생계비가 역대 최고 수준으로 증가했습니다. 이는 채무자가 실제로 납부해야 하는 월 예상 변제금이 이전 연도에 비해 현저하게 감소하여, 경제적 부담이 한층 경감되었음을 의미합니다.</p>
+        
+        <div class="info-box">
+            <strong>2026년 최저생계비 상향의 실질적인 혜택</strong><br>
+            소득에서 기본 생활 수준 유지를 위해 확보할 수 있는 법정 보장 금액이 늘어나면, 동일한 소득 수준을 유지하더라도 법원에 매달 상환해야 하는 원금 비율이 줄어듭니다. 이는 장안구에 거주하는 일용직 근로자나 권선구에서 영세 상점을 운영하는 자영업자, 영통구 테크노밸리에 근무하는 IT 직장인 등 다양한 직군에 고루 적용되는 긍정적 변화입니다.
+        </div>
+    </section>
+
+    <section id="calculator-section">
+        <h2>수원개인회생 자가 진단 및 예상 변제금 계산기</h2>
+        <p>실제 법률 상담을 의뢰하기 전, 본인이 제도의 기본 자격 조건을 충족하는지 여부와 매달 납부하게 될 평균 변제 금액 수준을 사전에 예상 계산해 볼 수 있는 모의 산정 도구입니다. 아래 양식에 본인의 실제 금융 데이터를 입력하시면 대략적인 산정 결과를 가늠해보실 수 있습니다.</p>
+        
+        <form id="rehab-calc-form" onsubmit="event.preventDefault(); return false;">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="calc-income">본인의 월 평균 세후 소득 (단위: 원)<span class="required-label">(필수)</span></label>
+                    <input type="number" id="calc-income" required placeholder="예: 2500000">
+                </div>
+                <div class="flex-item">
+                    <label for="calc-family">법정 부양가족 수 (본인 포함)<span class="required-label">(필수)</span></label>
+                    <select id="calc-family" required>
+                        <option value="1">1인 가구 (본인 혼자)</option>
+                        <option value="2">2인 가구 (부부 혹은 자녀 1인 부양)</option>
+                        <option value="3">3인 가구 (부양가족 2인)</option>
+                        <option value="4">4인 가구 (부양가족 3인)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="calc-debt">총 보유 채무 금액 (원금 기준)<span class="required-label">(필수)</span></label>
+                    <input type="number" id="calc-debt" required placeholder="예: 50000000">
+                </div>
+                <div class="flex-item">
+                    <label for="calc-asset">본인 소유 재산 총액 (부동산, 차량, 예적금 포함)<span class="required-label">(필수)</span></label>
+                    <input type="number" id="calc-asset" required placeholder="예: 15000000">
+                </div>
+            </div>
+
+            <label for="calc-region">현재 거주 중이거나 주된 근무지가 있는 지역</label>
+            <select id="calc-region">
+                <option value="jangan">수원시 장안구</option>
+                <option value="gwonseon">수원시 권선구</option>
+                <option value="paldal">수원시 팔달구</option>
+                <option value="yeongtong">수원시 영통구</option>
+                <option value="other">경기 기타 지역 및 타시도</option>
+            </select>
+
+            <button type="button" class="btn-cta" onclick="calculateRehab();">자가 진단 및 가계산 실행</button>
+        </form>
+
+        <div id="calc-result" class="info-box" style="display:none; margin-top: 20px;">
+            <h3 id="calc-result-title">예상 산정 결과 분석</h3>
+            <p id="calc-result-text">정보 입력 시 대략적인 예상 납부액이 하단에 출력됩니다.</p>
+        </div>
+    </section>
+
+    <script>
+        function calculateRehab() {
+            var income = parseFloat(document.getElementById('calc-income').value);
+            var family = parseInt(document.getElementById('calc-family').value);
+            var debt = parseFloat(document.getElementById('calc-debt').value);
+            var asset = parseFloat(document.getElementById('calc-asset').value);
+
+            if (isNaN(income) || isNaN(debt) || isNaN(asset)) {
+                alert('모든 입력란에 정확한 숫자를 입력해 주시기 바랍니다.');
+                return;
+            }
+
+            var minLivingCost = 1538543;
+            if (family === 2) minLivingCost = 2520105;
+            else if (family === 3) minLivingCost = 3211916;
+            else if (family === 4) minLivingCost = 3906688;
+
+            var resultBox = document.getElementById('calc-result');
+            resultBox.style.display = 'block';
+
+            if (income <= minLivingCost) {
+                document.getElementById('calc-result-title').innerText = '진단 결과: 현재 자격 충족 불명확';
+                document.getElementById('calc-result-text').innerHTML = '현재 입력하신 월 소득(' + income.toLocaleString() + '원)이 가구원수별 최저생계비(' + minLivingCost.toLocaleString() + '원)보다 작거나 같습니다. 이 경우 급여 조건이나 부양가족 수 산정을 재검토해야 하며, 부득이한 경우 개인파산 등의 다른 대안을 심층 비교 검토하셔야 합니다. 세부 사항은 대리인 컨설팅을 추천해 드립니다.';
+                return;
+            }
+
+            if (asset >= debt) {
+                document.getElementById('calc-result-title').innerText = '진단 결과: 개인회생 불가능 (재산 초과)';
+                document.getElementById('calc-result-text').innerHTML = '개인회생 신청을 위한 핵심 전제 요건은 채무액이 재산보다 많아야 한다는 청산가치 원칙입니다. 현재 입력하신 재산 총액(' + asset.toLocaleString() + '원)이 총 채무 금액(' + debt.toLocaleString() + '원)을 초과하므로 자격 조건을 충족하기 어렵습니다. 재산 평가 방식에 숨어있는 채무 감안 요소를 전문가와 구체적으로 분석해 보시길 추천해 드립니다.';
+                return;
+            }
+
+            var expectedPayment = income - minLivingCost;
+            var totalRepayment = expectedPayment * 36;
+            var path = "정상 신청 가능 단계";
+
+            document.getElementById('calc-result-title').innerText = '진단 결과: 개인회생 진행 추천 대상';
+            document.getElementById('calc-result-text').innerHTML = 
+                '신청인의 월 예상 변제금은 매달 약 <strong>' + Math.round(expectedPayment).toLocaleString() + '원</strong>으로 산정됩니다.<br>' +
+                '36개월간 성실 납부 시 총상환 예정 원금은 약 ' + Math.round(totalRepayment).toLocaleString() + '원이며, ' +
+                '나머지 잔여 원금과 이자는 전액 면책될 가능성이 있습니다. 다만, 수원지방법원은 신청인의 직장 종류나 재산 형태에 따라 월 변제금 상향을 보정 권고할 수 있으므로 전문 대리인과의 조율을 통한 면밀한 소명이 요구됩니다.';
+        }
+    </script>
+
+    <section>
+        <h2>2026년 기준 가구원수별 최저생계비 상세 비교</h2>
+        <p>매월 납입해야 하는 변제금 결정을 지배하는 가장 핵심적인 지표는 보건복지부의 고시 내용을 기반으로 하는 기준 중위소득 60% 한도액입니다. 2026년 새롭게 확정된 최저생계비 테이블을 기반으로 본인이 해당 세대에 얼마의 권리를 법원으로부터 인정받을 수 있는지 파악해 보시기 바랍니다.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>가구 구성원수</th>
+                    <th>2025년 최저생계비 기준</th>
+                    <th>2026년 최저생계비 기준</th>
+                    <th>전년 대비 변동률</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1인 가구</td>
+                    <td>1,438,543원</td>
+                    <td>1,538,543원</td>
+                    <td>6.95% 인상</td>
+                </tr>
+                <tr>
+                    <td>2인 가구</td>
+                    <td>2,360,105원</td>
+                    <td>2,520,105원</td>
+                    <td>6.78% 인상</td>
+                </tr>
+                <tr>
+                    <td>3인 가구</td>
+                    <td>3,011,916원</td>
+                    <td>3,211,916원</td>
+                    <td>6.64% 인상</td>
+                </tr>
+                <tr>
+                    <td>4인 가구</td>
+                    <td>3,656,688원</td>
+                    <td>3,906,688원</td>
+                    <td>6.84% 인상</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>해당 테이블에서 제시하는 가구당 최저 생계 금액은 주거비, 식비, 기본 공과금 등이 모두 포함된 비용이며, 특별한 만성 의학적 치료가 수반되는 중증 의료비나 객관적인 사실 증빙이 수월한 추가 교육비 지출 등이 소명되는 경우 기본 최저 수준에 가산되는 임의적 추가 생계비 혜택을 추가로 배정받을 수 있습니다.</p>
+    </section>
+
+    <section>
+        <h2>수원지방법원 관할 구역 특징과 심사 경향 분석</h2>
+        <p>경기도 남부 지역의 거대 지방 자치 단체인 수원시 장안구, 권선구, 팔달구, 영통구 및 주변 위성 도시의 사건들을 일괄적으로 수임 및 감독하는 법원은 광교에 위치한 수원지방법원입니다. 수원지방법원은 전국에 분포한 일반 법원 가운데서도 접수되는 총 사건 규모가 상당한 편에 속해, 면밀한 검증 단계를 도입하여 업무를 운영하고 있습니다.</p>
+        
+        <h3>신청 건수의 연도별 지속적 증가 추이</h3>
+        <p>대외적인 고물가 국면과 자영업 경영 악화, 주택 담보 대출 금리 누적 상승 등이 원인으로 지목되며, 20대 청년층의 주식 투자 실패 부채 및 30대와 40대의 가계 부담 채무로 인해 수원지방법원 관할로 접수되는 개인회생 신청 건수가 가파르게 상승하고 있습니다.</p>
+
+        <div class="chart-container">
+            <h3>연도별 수원지방법원 개인회생 신청 건수 추이</h3>
+            <div class="chart-row">
+                <span class="chart-label">2022년</span>
+                <div class="chart-bar-wrapper">
+                    <div class="chart-bar" style="width: 58%;">약 11,500건</div>
+                </div>
+            </div>
+            <div class="chart-row">
+                <span class="chart-label">2023년</span>
+                <div class="chart-bar-wrapper">
+                    <div class="chart-bar" style="width: 70%;">약 13,800건</div>
+                </div>
+            </div>
+            <div class="chart-row">
+                <span class="chart-label">2024년</span>
+                <div class="chart-bar-wrapper">
+                    <div class="chart-bar" style="width: 82%;">약 16,200건</div>
+                </div>
+            </div>
+            <div class="chart-row">
+                <span class="chart-label">2025년</span>
+                <div class="chart-bar-wrapper">
+                    <div class="chart-bar" style="width: 92%;">약 18,100건</div>
+                </div>
+            </div>
+            <div class="chart-row">
+                <span class="chart-label">2026년 예상</span>
+                <div class="chart-bar-wrapper">
+                    <div class="chart-bar active" style="width: 100%;">약 19,800건 예상</div>
+                </div>
+            </div>
+        </div>
+
+        <p>수원지방법원의 특징은 외부회생위원이 배정되는 확률이 높고, 급여 증빙 서류에 나타나는 세부 이체 내역이나 신용카드 지출 사용처의 내역까지 대조하며 불성실한 낭비 요인이 존재할 경우 매달 상환하여 청산해야 할 변제금을 강도 높게 증액할 것을 보정 명령의 형식을 빌려 다수 요구한다는 점입니다.</p>
+    </section>
+
+    <section>
+        <h2>개인회생과 타 채무조정 제도의 실무적 차이점 분석</h2>
+        <p>과중한 채무에 시달리는 경우, 단순히 개인이 인터넷으로 취합한 한정된 소식에만 전적으로 기대기보다는 법무부 유관 제도의 고유 장단점과 종류별 적용 한계를 확실히 비교 인지한 후 본인의 최종 추진 방안을 정하는 편이 현명합니다.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>구분 사항</th>
+                    <th>개인회생</th>
+                    <th>개인파산 및 면책</th>
+                    <th>신용회복 워크아웃</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>주요 자격 조건</td>
+                    <td>지속적 소득을 증빙할 수 있는 채무자</td>
+                    <td>고령, 질병으로 노동 능력이 부재한 자</td>
+                    <td>연체 기간 요건을 충족한 신규 신청인</td>
+                </tr>
+                <tr>
+                    <td>채무 감면 한도액</td>
+                    <td>원금 최대 90% 상당 감면</td>
+                    <td>보유한 채무액의 전액 면책</td>
+                    <td>이자 감면 위주 및 장기 분할 원금 상환</td>
+                </tr>
+                <tr>
+                    <td>기존 재산의 보존성</td>
+                    <td>소유 주택, 차량, 임차보증금 지속 보유</td>
+                    <td>청산 가치 환가 후 전액 채무 변제 처분</td>
+                    <td>일부 압류 유예 및 본인 유지 보장</td>
+                </tr>
+                <tr>
+                    <td>금융 거래 불이익</td>
+                    <td>인가결정 확정 시 공공기록 일시 등재</td>
+                    <td>신용 거래 전면 차단 및 재취업 제한 발생</td>
+                    <td>개별 금융기관과의 내부 거래 제약</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>해당 비교 분석 정보가 말해주듯, 개인회생은 소유하고 있는 장안구의 부동산이나 권선구의 거주 보증금 등 본인 소유의 명의 재산을 고스란히 영위하면서 금융 기관과의 합의 없이도 원금을 압도적인 감면 비율로 재조정받는다는 엄청난 이점이 존재하여 대다수 영세 자영업자와 주부, 청년 급여 소득층이 추천받아 적극 가입하는 절차로 굳건한 위치를 차지하고 있습니다.</p>
+    </section>
+
+    <section>
+        <h2>수원개인회생 자격과 단계별 핵심 절차 완벽 정독</h2>
+        <p>개인회생 신청서를 법원에 투명하게 작성하여 제출하는 단계부터 최종 면책 처분 통보를 받아내기까지는 수많은 복잡한 관문을 정밀하게 통과해야 하는 기나긴 시간의 싸움입니다. 평균적으로 6개월에서 10개월 내외가 고르게 소요되는 해당 처리 일정을 사전에 인지해 두어야 당황스러운 부작용을 사전에 차단하는 것이 가능합니다.</p>
+
+        <ol>
+            <li><strong>신청서 및 재산, 채무 목록 등 제반 서류 접수:</strong> 관할인 수원지방법원에 신청 문서를 전자 소송 시스템을 거쳐 전송 접수합니다. 이와 동시에 채권자들의 독촉 전화 및 법적 강제 집행 처분을 금지하는 금지 명령 신청을 사유서와 함께 다이렉트 패키지로 제출하게 됩니다.</li>
+            <li><strong>법원의 금지명령 심의 및 통보:</strong> 서류가 접수된 날로부터 평균 일주일 내외의 심사를 거쳐 채권 추심 업체들의 연락을 완전 동결시키는 무서운 금지명령이 채권자들에게 개별 전달됩니다. 이를 통해 일상의 평화로운 환경을 회복하실 수 있습니다.</li>
+            <li><strong>회생위원 지정 및 상세 면담 진행:</strong> 임명된 담당 위원의 지도하에 서류의 적법성을 세밀히 가치 평가하고, 미비한 세금 납부 내역이나 통장 이체 내역 등 추가 보정 권고 사항을 채무자 측 대리인 사무실에 공식적으로 발송하는 일정입니다.</li>
+            <li><strong>개시결정 선고:</strong> 심의 과정을 순조롭게 극복해 내면 사실상 회생의 본 궤도에 정착했음을 증명하는 개시결정 처분이 공포되며, 정해진 공적 가상 계좌번호로 약정된 매달의 상환 금액을 적립 납부하는 일과를 비로소 시작하게 됩니다.</li>
+            <li><strong>채권자집회 출석 및 계획안 인가 확정:</strong> 법원 구내에 위치한 회생 법정에 본인이 본인 신분증을 반드시 지참하고 입정하여, 채권자들의 고지된 변론 요구권이나 소명의견 기회를 배정한 이후 계획서대로의 최종적인 통과를 선포받는 단계입니다.</li>
+            <li><strong>변제 의무 수행 완료 및 대망의 면책 결정:</strong> 평균적으로 총 36회차에 걸쳐 한 번의 미납이나 연체 사실도 없이 충실하게 변제 상환 약속을 실천해 낸 후, 법원에 서류로 면책을 접수 신청하면 비로소 모든 채무 불이행 신용 불이익 딱지가 깨끗하게 청산 소멸하며 정상 금융 활동으로의 복귀가 이룩됩니다.</li>
+        </ol>
+    </section>
+
+    <section class="poll-section">
+        <h2>수원개인회생 고민 해결을 위한 여론 및 참여 공간</h2>
+        <p>개인회생 신청을 방해하는 가장 중대한 장애물은 주위 시선에 대한 우려 및 정확하지 않은 무분별한 소문들입니다. 실제 채무 상태로 불면증을 겪는 분들이 평소 어떠한 생각을 지니고 계신지, 간단한 설문 조사에 동참해 주시어 실시간 결과를 함께 공유해 보시기 바랍니다.</p>
+        
+        <form id="opinion-poll" onsubmit="event.preventDefault(); alert('소중한 의견이 등록되었습니다. 성실하게 답변해주셔서 감사합니다.'); return false;">
+            <p><strong>질문: 현재 본인에게 가장 중대한 심적 부담감을 부여하는 부채 유발의 근본 원인은 무엇입니까?</strong></p>
+            <input type="radio" id="opt-1" name="cause" value="living" checked>
+            <label for="opt-1" style="display:inline; font-weight:normal;">주거비 상승 및 고물가로 인한 장기간 가계 생활비 누적 부채</label><br>
+            
+            <input type="radio" id="opt-2" name="cause" value="business">
+            <label for="opt-2" style="display:inline; font-weight:normal;">장안구, 팔달구 등의 상권 위축으로 영세 매장 운영 실패 및 사업 자금 손실</label><br>
+            
+            <input type="radio" id="opt-3" name="cause" value="investment">
+            <label for="opt-3" style="display:inline; font-weight:normal;">무리하게 뛰어든 코인, 비트코인 가상자산 및 해외 주식 레버리지 투자 실패</label><br>
+            
+            <input type="radio" id="opt-4" name="cause" value="guarantee">
+            <label for="opt-4" style="display:inline; font-weight:normal;">가족 및 친지 보증 채무 인수 또는 부당한 연대 채무 발생</label><br><br>
+            
+            <button type="submit" class="btn-cta" style="margin: 10px 0; width: auto; padding: 10px 20px;">설문 응답 제출하고 다른 통계 보기</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>온라인 커뮤니티 트렌드와 왜곡된 과장 광고에 대한 경고</h2>
+        <p>현대에는 검색 포털의 범주를 크게 넘어서 많은 정보가 다양한 커뮤니티로 활발히 확산되고 있습니다. 특히 20대와 30대 유저 비중이 지배적으로 높은 디시, 보배드림, 펨코, 에펨코리아 등의 유명 게시판을 돌아보면, 개인회생 수임 업체를 선별할 때 나타나는 실제 내돈내산 가치 평가 후기들이 가감 없이 게시되어 있는 양상입니다.</p>
+        <p>하지만 다수의 대중이 모인 인터넷 게시판과 온라인 블로그 등의 이면에는 불법 사무소 소속 브로커들이 교묘하게 침투해 교란 활동을 벌이는 부작용 역시 상존합니다. 이들은 무조건적인 저렴한곳이나 수임비가 압도적으로 싼곳만을 전면에 노출하며, 신규 의뢰인 계약을 한 건이라도 유치하기 위해 가입 시 현금지원, 부가적인 지원금 지급, 무료 주유 상품권이나 외식 사은품을 마구 뿌리는 듯한 눈부신 혜택형 사은 행사를 벌이기도 합니다.</p>
+        <div class="info-box" style="background-color: #fffbeb; border-color: #d97706;">
+            <strong>허위 미끼성 상품권 및 현금 이벤트에 대한 실무 법적 주의사항</strong><br>
+            법률 전문 자격을 취득하지 않은 이른바 무자격 대행 컨설팅 브랜드 업체들이 저지르는 위법한 명의 대여 행위는 결국 소송 접수 이후의 사건 관리 부재, 심각한 보정 명령 대응 태만으로 비극적인 기각 결정 사태를 맞이하게 되는 지름길입니다. 법조계의 유관 업무는 정해진 수임 가격 안에서 의뢰인의 특이 내역을 법원 재판부에 진정성 있게 설파하는 정공법만이 유효합니다.
+        </div>
+        <p>포털의 양대 축인 네이버 지식인 서비스나 해외 기반인 구글 검색 엔진, 젊은 층의 활용도가 대단히 큰 동영상 플랫폼인 유튜브, 전파 속도가 막강한 트위터나 인스타그램, 페이스북, 그리고 국민 메신저 어플인 카카오톡과 소셜 금융 어플 토스 등의 수많은 첨단 매체에서 제공하는 정보를 올바로 걸러내기 위해, 최근에는 인공지능 기술의 대명사인 제미나이 혹은 챗지피티 모델과 같은 스마트 툴을 이용해 교차 사실 검증을 이행하는 현명한 대중들이 크게 확대되고 있습니다.</p>
+    </section>
+
+    <section>
+        <h2>신뢰할 수 있는 공식 행정 및 무료 법률 구제 사이트</h2>
+        <p>수원개인회생 및 면책 등 가계 자금 파탄 사태를 법률적으로 슬기롭게 해결하기 위해 유효한 정보들을 직접 확인하고 비교해 볼 수 있는 안전하고 신뢰성 높은 정부 부처 및 공공기관의 안내 사이트를 목록화하여 전달해 드립니다.</p>
+        
+        <ol>
+            <li><a href="https://recoverybylawsl.koreahankang.com" target="_blank">수원개인회생 종합 법률 연구 지원 허브 사이트</a>: 경기 남부 권역의 가계 회생 사태 분석 및 법령 해석을 전문적으로 연구하고 지원하는 핵심 외부 법률 참고 자료망입니다.</li>
+            <li><a href="https://namu.wiki/w/%EA%B0%9C%EC%9D%B8%ED%9A%8C%EC%83%9D" target="_blank">나무위키 개인회생 설명 사전 페이지</a>: 비전문가나 입문자가 읽어도 부채 탕감 제도 전반의 원리 구조를 빠르고 간명하게 터득하기 좋도록 대중들이 집필하여 편집한 신뢰성 높은 종합 설명 포털입니다.</li>
+            <li><a href="https://suwon.scourt.go.kr" target="_blank">수원지방법원 공식 전자 포털 홈페이지</a>: 장안구, 권선구, 팔달구, 영통구 등 각 구청 관내의 행정 사건 접수 및 채무 사건의 실제 담당 부서 전화번호를 공식 고지하는 법원 직영 사이트입니다.</li>
+            <li><a href="https://help.scourt.go.kr" target="_blank">대한민국 법원 전자민원센터</a>: 소송 서류의 표준적 양식지 양식을 다운로드하고, 본인에게 해당되는 인지대 송달료 수수료 산정 계산기 등의 부속 서비스를 한눈에 들여다볼 수 있는 종합 공무 포털입니다.</li>
+            <li><a href="https://www.klac.or.kr" target="_blank">대한법률구조공단 국가 지원 무료 지원 센터</a>: 기초생활수급자나 다문화 가정 등 경제적 궁지에 빠진 소외 계층을 위해 수임 비용 부담 없이 무료로 개인회생 대리 작성을 기부 지원하는 공익성 행정 법률 기구입니다.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>자주 묻는 수원개인회생 심층 질의응답 (FAQ)</h2>
+        <p>실제 법률 대리인 사무실의 문턱을 넘기 직전까지 가장 많은 예비 의뢰인들이 한결같이 던져주시는 빈번한 의문점들을 선별하여, 실제 법률 조문의 취지와 실무 관례에 기반해 솔직하게 풀어드립니다.</p>
+
+        <h3>질문: 가상화폐 투자 실패나 인터넷 사설 토토, 도박 빚도 개인회생 탕감 대상에 부합할까요?</h3>
+        <p>답변: 네, 엄연히 면책 대상 부채에 포함되어 절차 개시가 가능합니다. 과거에 일부 법원에서는 도박과 사행성 게임 손실을 전적으로 본인의 재산(청산가치)으로 반영하게 하여, 변제금을 100% 가깝게 매달 전부 상환하도록 보정 지시를 엄밀하게 집행하던 흐름이 지배적이었습니다. 그러나 최근에는 채무자의 자활 의지를 고취하기 위하여 대리인의 능숙한 사유 설명 및 반성 노력 소명 여하에 맞춰 원금의 일정 부류를 정상적으로 면제 삭감해 주는 유연한 개시 결과가 많이 보고되고 있습니다.</p>
+
+        <h3>질문: 개인회생을 진행하면 다니고 있는 영통구 대기업 직장이나 학교에 불이익 통보가 가나요?</h3>
+        <p>답변: 결코 대외적으로 공개되지 않습니다. 채무자가 개인회생 절차를 이용한다는 무서운 소식이 회사의 통상 행정 인사팀에 이메일이나 유선 우편으로 임의 송부되는 제도는 이 지구상에 부재합니다. 채권자들도 공적 사생활 보호 장치에 의거해 직장에 방문하여 횡포를 부리는 불법 채권 추심 행위를 자행할 수 없게 철저히 통제당하므로, 본인의 내밀한 결심만 완고하게 선다면 안심하고 업무와 커리어 개발을 영위하실 수 있습니다.</p>
+
+        <h3>질문: 배우자 명의로 되어 있는 아파트 재산도 내 회생 변제금 산정에 불리하게 미치나요?</h3>
+        <p>답변: 맞습니다. 배우자가 보유하고 있는 주요 주택 자산이나 자금 예금은 부부 공동 생활에 기반해 마련한 공유적 성격의 재산으로 판단하는 경향이 짙습니다. 따라서 배우자 재산 순가치의 2분의 1(50%)에 달하는 지분 금액만큼이 신청인 개인의 잠재적 청산가치에 누적 산입되는 법률 효과가 발생합니다. 이로 인해 내가 소유한 직접 명의 재산이 전혀 존재하지 않더라도, 배우자의 자산 규모 때문에 월 상환 납부액이 생각보다 상향될 소지가 존재하므로 사전에 정교한 재산 분석 상담이 핵심으로 작용합니다.</p>
+    </section>
+
+    <section id="consultation-form-section">
+        <h2>수원개인회생 맞춤형 혜택 상담 신청 및 전문 검토 양식</h2>
+        <p>고농도의 부채 독촉 스트레스로 일상 가정의 행복이 송두리째 파괴되고 계시다면, 2026년 최신 제도의 수혜 자격에 도달하는지 여부를 아래 자문 신청서를 작성해 주시기 바랍니다. 수집되는 모든 정보는 개인정보 보호 원칙에 의거해 비밀을 영구히 준수합니다.</p>
+        
+        <form action="/suwon-rehab-consult-submit" method="POST">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="user-name">신청인 실명<span class="required-label">(필수)</span></label>
+                    <input type="text" id="user-name" name="user_name" required placeholder="홍길동">
+                </div>
+                <div class="flex-item">
+                    <label for="user-phone">신속한 회신 연락처<span class="required-label">(필수)</span></label>
+                    <input type="tel" id="user-phone" name="user_phone" required placeholder="010-1234-5678" pattern="[0-9\-]+">
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="user-age">본인의 실연령대<span class="required-label">(필수)</span></label>
+                    <select id="user-age" name="user_age" required>
+                        <option value="">나이 선택</option>
+                        <option value="20">활기찬 청년기 20대</option>
+                        <option value="30">열심히 사회생활을 이행하는 30대</option>
+                        <option value="40">가장으로서 가계를 이끄는 40대</option>
+                        <option value="50">자녀의 학자금을 고민하는 50대 이상</option>
+                    </select>
+                </div>
+                <div class="flex-item">
+                    <label for="user-district">현재 거주 중이신 수원시 내 세부 지역<span class="required-label">(필수)</span></label>
+                    <select id="user-district" name="user_district" required>
+                        <option value="">수원 구청 선택</option>
+                        <option value="jangan">수원시 장안구</option>
+                        <option value="gwonseon">수원시 권선구</option>
+                        <option value="paldal">수원시 팔달구</option>
+                        <option value="yeongtong">수원시 영통구</option>
+                        <option value="other">인접 경기 남부 지역</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="user-debt-size">현재 해결하고 싶으신 본인의 총체적인 신용 부채 액수</label>
+            <select id="user-debt-size" name="user_debt_size">
+                <option value="under3k">3천만 원 미만의 생활 채무</option>
+                <option value="under5k">3천만 원 이상 ~ 5천만 원 미만 부채</option>
+                <option value="under1y">5천만 원 이상 ~ 1억 원 미만 채무</option>
+                <option value="over1y">1억 원 이상의 무거운 대규모 금융 빚</option>
+            </select>
+
+            <label for="user-comment">채무 발생 배경 및 원하시는 방향성 기재 (특이 사항)</label>
+            <textarea id="user-comment" name="user_comment" rows="5" placeholder="예: 무이자 상환 가능 여부를 알고 싶습니다. 최근 장안구 가구 매장을 폐업하고 배달 업종으로 이직하여 월급은 대략 230만 원 정도 고정 수령 중입니다. 대리인 비용의 부담 없는 할부 납부나 가격 할인 견적도 상세 상담받고 싶습니다."></textarea>
+
+            <button type="submit" class="btn-cta">수원개인회생 정식 무료 법률 분석 요청 보내기</button>
+        </form>
+    </section>
+
+  
